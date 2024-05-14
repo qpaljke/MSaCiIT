@@ -1,0 +1,112 @@
+for (let i = 0; i < 5; i++)
+{
+    switch (i)
+    {
+        case 0:
+            console.log("Outer loop iteration:", i);
+            for (let j = 0; j < 3; j++)
+            {
+                if (i == 0  j==0)
+                {
+                    console.log(i,j);
+                }
+                console.log("Inner loop 1 iteration:", j);
+                for (let k = 0; k < 2; k++)
+                {
+                    console.log("Inner loop 2 iteration:", k);
+                    for (let l = 0; l < 4; l++)
+                    {
+                        console.log("Inner loop 3 iteration:", l);
+                        for (let m = 0; m < 3; m++)
+                        {
+                            console.log("Inner loop 4 iteration:", m);
+                        }
+                    }
+                }
+            }
+            break;
+        case 1:
+            console.log("Outer loop iteration:", i);
+            for (let j = 0; j < 2; j++)
+            {
+                if (i == 1  j==0)
+                {
+                    console.log(i,j);
+                }
+                console.log("Inner loop 1 iteration:", j);
+                for (let k = 0; k < 3; k++)
+                {
+                    console.log("Inner loop 2 iteration:", k);
+                }
+            }
+            break;
+        case 2:
+            console.log("Outer loop iteration:", i);
+            if (i == 2 || j==0)
+            {
+                console.log(i,j);
+            }
+            for (let j = 0; j < 4; j++)
+            {
+                console.log("Inner loop 1 iteration:", j);
+            }
+            break;
+        default:
+            console.log("Outer loop iteration:", i);
+    }
+}
+
+if (x > y)
+{
+    console.log("x is greater than y");
+}
+else
+{
+    console.log("x is not greater than y");
+    if (x < y)
+    {
+        console.log("x is less than y");
+    }
+    else
+    {
+        console.log("x is equal to y");
+        if (x % 2 === 0)
+        {
+            console.log("x is even");
+            while (x < -10)
+            {
+                if (x < -15)
+                {
+                    x += 5;
+                }
+                else
+                {
+                    x += 1;
+                }
+            }
+        }
+        else
+        {
+            console.log("x is odd");
+            for (let i = 6; i >= 0; i -= 2)
+            {
+                if (i > 2)
+                {
+                    console.log("i > 2");
+                    if (i === 4)
+                    {
+                        console.log("i = 4");
+                    }
+                    else
+                    {
+                        console.log("i != 4");
+                    }
+                }
+                else
+                {
+                    console.log("i < 2");
+                }
+            }
+        }
+    }
+}
